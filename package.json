@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "start": "sandbox",
+    "lint": "eslint ./app/**/*.mjs --fix"
+  },
+  "devDependencies": {
+    "@architect/sandbox": "latest",
+    "eslint": "latest"
+  },
+  "dependencies": {
+    "@architect/functions": "^5.3.1",
+    "@begin/data": "^4.0.2",
+    "@enhance/arc-plugin-enhance": "latest"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ]
+    },
+    "ignorePatterns": [],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2022
+    }
+  }
+}
